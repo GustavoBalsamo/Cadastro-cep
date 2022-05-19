@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@700&display=swap');
+
+header{
+    padding-top: 26px;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background: url(img/natal.jpg);
+    background-size: contain;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.login{
+    width: 602px;
+    height: 599px;
+    background: #28481f;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 6px;
+    display: flex;
+    margin-top: 18px;
+    border-radius: 42px;
+    border: 3px solid #522017;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+.titulo{
+    width: 206px;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-indent: 1px;
+    color: #4c0202;
+
+}
+.texto{
+    FONT-VARIANT: JIS04;
+    width: 206px;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-indent: 1px;
+    color: #ffffff;
+}
+
+.container form{
+    width: 317px;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #619027;
+}
+
+/*botao caso estiver tudo certo no cadastro*/
+button:enabled{
+    transition-delay: 0.1s;
+    width: 316px;
+    height: 52px;
+    background: #26c240;
+    border: 3px solid #522017;
+    border-radius: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 13px;
+    
+}
+.trecho{
+    padding-left: 6px;
+}
+#botao{
+    margin-right: 1px;
+}
+/*botao começa desabilitado*/
+button:disabled{
+    width: 316px;
+    height: 52px;
+    background: #3b3434;
+    border: 3px solid #3d3c3c;
+    border-radius: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    margin-top: 13px;
+    
+} 
+
+.altera_cor input{
+    width: 287px;
+    height: 36px;
+    background: #eed1be;
+    border: 3px solid #9f5800;
+    border-radius: 7px;
+}
+
+/*warning só aparece em caso de erro*/
+.altera_cor small{
+    visibility: hidden;
+    font-family: 'Poppins';
+}
+
+
+/* CSS verde*/
+.altera_cor.success input{
+ border: 3px solid #00ff2a;
+}
+
+
+ /* CSS vermelho*/
+.altera_cor.error input{
+    border: 3px solid #ff0000;
+}
+
+.altera_cor.error small{
+    visibility: visible;
+    color :#ff0000;
+}

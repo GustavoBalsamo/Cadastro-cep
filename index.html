@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type='module' defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <main class="container">
+        <div class="login">
+            <div class="trecho">
+             <span class="titulo">Lista do papai noel</span>
+             <br>
+             <span class="texto"> O papai noel irá começar a distriubuir os seus presentes em breve,insira seu cep para que ele saiba aonde entregar</span>
+            </div>
+             <form id="form" class="form">
+                <div id="div1" class="altera_cor ">
+                    <label for="cep">CEP</label>
+                    <input type="number" id="cep"  required onblur="muda_botao()">
+                    <small>cep inválido</small>
+                </div>
+                <div id="div2"class="altera_cor ">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco"  disabled onblur="muda_rua(rua.value.trim()),muda_botao()">
+                </div>
+                <div id="div3" class="altera_cor">
+                    <label for="numero">DDD</label>
+                    <input type="text" id="ddd"  disabled onblur="muda_ddd(ddd.value.trim()),muda_botao()">
+                </div>
+                <div id="div4"class="altera_cor">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro"  disabled onblur="muda_bairro(bairro.value.trim()),muda_botao()">
+                </div>
+                <div id="div5"class="altera_cor">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade"  disabled onblur="muda_cidade(cidade.value.trim()),muda_botao()">
+                </div>
+                <div id="div6"class="altera_cor">
+                    <label for="estado">UF</label>
+                    <input type="text" id="estado"  disabled onblur="muda_uf(estado.value.trim()),muda_botao()">
+                </div>
+                <div id="div7" class="altera_cor">
+                    <label for="estado">IBGE</label>
+                    <input type="text" id="ibge"  disabled onblur="muda_ibge(ibge.value.trim()),muda_botao()">
+                </div>
+                <div >
+                    <button id="botao" type="submit" disabled >Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
