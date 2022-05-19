@@ -77,8 +77,8 @@ input[type=number] {
 /*botao caso estiver tudo certo no cadastro*/
 button:enabled{
     transition-delay: 0.1s;
-    width: 316px;
-    height: 52px;
+    width: 301px;
+    height: 53px;
     background: #26c240;
     border: 3px solid #522017;
     border-radius: 15px;
@@ -98,8 +98,8 @@ button:enabled{
 }
 /*botao começa desabilitado*/
 button:disabled{
-    width: 316px;
-    height: 52px;
+    width: 301px;
+    height: 53px;
     background: #3b3434;
     border: 3px solid #3d3c3c;
     border-radius: 15px;
@@ -125,14 +125,18 @@ button:disabled{
     visibility: hidden;
     font-family: 'Poppins';
 }
-
+input{
+    font-size: 20px;
+}
 
 /* CSS verde*/
 .altera_cor.success input{
  border: 3px solid #00ff2a;
 }
 
-
+.alinha{
+    margin-right: 7px;
+}
  /* CSS vermelho*/
 .altera_cor.error input{
     border: 3px solid #ff0000;

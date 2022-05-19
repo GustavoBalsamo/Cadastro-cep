@@ -18,7 +18,7 @@
              <form id="form" class="form">
                 <div id="div1" class="altera_cor ">
                     <label for="cep">CEP</label>
-                    <input type="number" id="cep"  required onblur="muda_botao()">
+                    <input type="number" id="cep"  required onblur="muda_vbotao()">
                     <small>cep inválido</small>
                 </div>
                 <div id="div2"class="altera_cor ">
@@ -45,7 +45,7 @@
                     <label for="estado">IBGE</label>
                     <input type="text" id="ibge"  disabled onblur="muda_ibge(ibge.value.trim()),muda_botao()">
                 </div>
-                <div >
+                <div class="alinha">
                     <button id="botao" type="submit" disabled >Cadastrar</button>
                 </div>
             </form>

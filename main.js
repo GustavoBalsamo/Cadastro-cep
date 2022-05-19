@@ -16,6 +16,7 @@ const ibge = document.getElementById('ibge');
 
 async function pesquisarCep() {
     limparFormulario();
+    setTimeout(async function(){
     //const cep tira os traços do cep, 
     //const url pega o site modelo do professor
     const cep = document.getElementById('cep').value.replace("-", "");
@@ -42,16 +43,17 @@ async function pesquisarCep() {
         const cep = document.getElementById('cep');
         input_vermelho(cep, 'Preencha com um cep valido');
     }
+},2000);
 }
 //toda vez que o cep não for correto, todos os valores ficam vazios, e os inputs voltam a ficar na cor comum
 const limparFormulario = (endereco) =>{
-    document.getElementById('endereco').value = '';
-    document.getElementById('bairro').value = '';
-    document.getElementById('cidade').value = '';
-    document.getElementById('estado').value = '';
-    document.getElementById('ddd').value = '';
-    document.getElementById('ibge').value = '';
-
+    document.getElementById('endereco').value ='...';
+    document.getElementById('bairro').value = '...';
+    document.getElementById('cidade').value = '...';
+    document.getElementById('estado').value = '...';
+    document.getElementById('ddd').value = '...';
+    document.getElementById('ibge').value = '...';
+    
     input_normal(cep);
     input_normal(rua);
     input_normal(bairro);
@@ -65,7 +67,8 @@ const limparFormulario = (endereco) =>{
     
 }
 
-//nessa const é colocado os valores nos inputs, com referencia no json
+//nessa const é colocado os valores nos inputs, com referencia no json  
+    
 const preencherFormulario = (endereco) =>{
     document.getElementById('endereco').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
@@ -83,7 +86,8 @@ const preencherFormulario = (endereco) =>{
     input_verde(ddd);
     input_verde(ibge);
     muda_botao();
-    }
+    };
+
 
 
 //verifica se todas as divs estão com a class correta, se sim, botão ativado
